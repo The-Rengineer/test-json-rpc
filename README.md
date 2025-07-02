@@ -14,7 +14,6 @@
 ## 🚀 セットアップ手順
 
 以下のコマンドを順に実行してください：
-
 ```bash
 git clone https://github.com/The-Rengineer/test-json-rpc.git
 cd test-json-rpc
@@ -28,23 +27,22 @@ pip install -r requirements.txt
 
 # サーバーの起動
 python3 test.py
-
+```
 
 別のターミナルで以下の curl コマンドを実行してください：
-
 ```bash
 curl -X POST \
   -H "Content-Type: application/json" \
   -d '{"jsonrpc": "2.0", "method": "subtract", "params": [42, 23], "id": 1}' \
   http://localhost:8000/api
+```
 
- 正常なレスポンス例：
-
+正常なレスポンス例：
 ```json
 {
   "jsonrpc": "2.0",
   "result": 19,
   "id": 1
 }
-
+```
 
